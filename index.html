@@ -18,25 +18,33 @@
     }
 
     // Regular
-
+    
     // Interpolated
-
+    console.log('I am a %s string.', 'silly');
     // Styled
-
+    console.log('%c Styled log.', 'color: red;')
     // warning!
-
+    console.warn('Warning...')
     // Error :|
-
+    console.error('Error! (This is only a test.)')
     // Info
-
+    console.info('Electrons are wave functions.')
     // Testing
-
+    console.assert(1 === 2, 'That assertion is incorrect.')
     // clearing
-
+      //console.clear();
     // Viewing DOM Elements
-
+    const p = document.querySelector('p');
+    console.log(p);
+    console.log('See Below: This is how you inspect all the properties on an element!')
+    console.dir(p);
     // Grouping together
-
+    dogs.forEach((dog) => {
+      console.groupCollapsed(`${dog.name}`)
+      console.log(`Name: ${dog.name}`);
+      console.log(`Age: ${dog.age}`);
+      console.groupEnd(`${dog.name}`);
+      });
     // counting
 
     // timing
